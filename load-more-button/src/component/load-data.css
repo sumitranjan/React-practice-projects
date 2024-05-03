@@ -1,0 +1,33 @@
+.product-conatiner {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 3%;
+}
+.card {
+  border: 1px solid gray;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
+.card img {
+  height: 250px;
+  width: 250px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center button horizontally */
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.loading-btn {
+  background-color: rgb(5, 140, 251);
+  height: 40px;
+  border: none;
+  width: 200px;
+  font-size: 15px;
+  font-weight: 400;
+  margin-right: 20px;
+}
