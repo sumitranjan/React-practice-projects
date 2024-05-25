@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: aquamarine;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 40px;
+}
+
+.score {
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hand {
+  height: 100px;
+  width: 100px;
+}
+
+.image-container {
+  margin: 8vh 0;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.button-container > button {
+  background-color: orange;
+  color: white;
+  width: 120px;
+  margin: 10px;
+  padding: 10px;
+  border: 0px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.current-status {
+  display: inline-block;
+  margin: auto;
+}
+.current-status,
+p {
+  text-align: left;
+  margin: 10px 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.current-status > p > span {
+  margin: 20px;
+}
+
+.restart-btn {
+  background-color: rgb(167, 8, 221);
+  color: white;
+  width: 200px;
+  margin: 15px;
+  padding: 10px;
+  border: 0px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.final-result {
+  color: blueviolet;
+}
+
+.final-result > .win {
+  color: red;
+}
+
+.button-container > button.play-btn-disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
