@@ -2,7 +2,15 @@ import React, { useEffect, useState } from "react";
 import "./RockPaperScissor.css";
 import { FaHandPaper, FaHandRock, FaHandScissors } from "react-icons/fa";
 
-const RockPaperScissor = () => {
+const choices = ["rock", "paper", "scissor"];
+
+const winningCombinations = {
+  rock: "scissor",
+  paper: "rock",
+  scissor: "paper",
+};
+
+const RockPaperScissorV2 = () => {
   const [userScore, setUserScore] = useState(0);
   const [computerScore, setComputerScore] = useState(0);
 
@@ -13,31 +21,28 @@ const RockPaperScissor = () => {
   const [roundResult, setRoundResult] = useState();
 
   const [finalResult, setFinalResult] = useState("");
-  const choices = ["rock", "paper", "scissor"];
 
-  function handlePlay(choice) {
-    setRoundNo(roundNo + 1);
-    let userChoice = choice;
+  function handlePlay(userChoice) {
     let computerChoice = computerTurn();
+    setComputerMessage(computerChoice);
+    setUserMessage(userChoice);
 
-    if (
-      (userChoice == "rock" && computerChoice === "scissor") ||
-      (userChoice == "scissor" && computerChoice === "paper") ||
-      (userChoice == "paper" && computerChoice === "rock")
-    ) {
+    let result;
+
+    if (winningCombinations[userChoice] === computerChoice) {
       //user win
       setUserScore((prev) => prev + 1);
-      setRoundResult("user get the point!");
+      result = "User gets the point!";
     } else if (userChoice == computerChoice) {
       //tie
-      setRoundResult("Tie!! No one get the point");
+      result = "Tie!! No one gets the point";
     } else {
       //computer win
       setComputerScore((prev) => prev + 1);
-      setRoundResult("computer get the point!");
+      result = "Computer gets the point!";
     }
-    setUserMessage(userChoice);
-    setComputerMessage(computerChoice);
+    setRoundResult(result);
+    setRoundNo((prev) => prev + 1);
   }
 
   function computerTurn() {
@@ -65,7 +70,7 @@ const RockPaperScissor = () => {
         setFinalResult("Game Tie!!");
       }
     }
-  }, [roundNom, userScore, computerScore]);
+  }, [roundNo, userScore, computerScore]);
 
   return (
     <div className="container">
@@ -116,4 +121,4 @@ const RockPaperScissor = () => {
   );
 };
 
-export default RockPaperScissor;
+export default RockPaperScissorV2;
