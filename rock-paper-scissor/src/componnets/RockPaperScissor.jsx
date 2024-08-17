@@ -65,7 +65,7 @@ const RockPaperScissor = () => {
         setFinalResult("Game Tie!!");
       }
     }
-  }, [roundNom, userScore, computerScore]);
+  }, [roundNo]);
 
   return (
     <div className="container">
