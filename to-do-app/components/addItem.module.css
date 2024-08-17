@@ -1,0 +1,19 @@
+.addItem-Input {
+  width: 250px;
+  height: 25px;
+  border: 1px solid gray;
+}
+
+.addItem-btn {
+  width: 100px;
+  margin-left: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+.AddItemContainer {
+  display: flex;
+  justify-content: center;
+}

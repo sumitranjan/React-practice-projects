@@ -1,0 +1,35 @@
+/* display.module.css */
+.listContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.deleteBtn {
+  margin-left: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.editBtn,
+.saveBtn,
+.cancelBtn {
+  margin-left: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.saveBtn {
+  background-color: green;
+}
+
+.cancelBtn {
+  background-color: gray;
+}
