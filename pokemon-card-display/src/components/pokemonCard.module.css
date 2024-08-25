@@ -1,0 +1,6 @@
+.pokemonCard {
+  margin: 0 2vh;
+  border: 1px solid red;
+  min-width: 250px;
+  min-height: 300px;
+}
