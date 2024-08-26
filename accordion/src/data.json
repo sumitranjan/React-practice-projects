@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "What are accordion components?",
+    "description": "Accordion components are UI elements that allow users to expand and collapse sections of content within a single page. Each section, known as a panel can be opened or closed independently. The primary purpose of an accordion is to organize and display large amounts of information in a compact and manageable way, enabling users to access specific content without being overwhelmed."
+  },
+  {
+    "id": 2,
+    "title": "What they are used for?",
+    "description": "Accordion components are used to organize and display content in a compact and user-friendly way. They are particularly useful in scenarios where you need to present a lot of information without overwhelming the user."
+  },
+  {
+    "id": 3,
+    "title": "What are the type of accordion?",
+    "description": "Accordion components come in different types, each designed to meet specific user interface needs, Single-Open Accordion, Multi-Open Accordion, Nested Accordion"
+  },
+  {
+    "id": 4,
+    "title": "Can I create an accordion component with a different framework?",
+    "description": "Yes, you can absolutely create accordion components using a variety of frontend frameworks beyond React. Each framework offers its own tools and paradigms for building interactive UI elements like accordions"
+  }
+]
