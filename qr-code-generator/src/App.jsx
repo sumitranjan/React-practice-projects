@@ -1,7 +1,11 @@
-import QRCodeGenerate from "./components/QRCodeGenerate";
+import QRCodeGenerator from "./components/QRCodeGenerator";
 
 function App() {
-  return <QRCodeGenerate />;
+  return (
+    <>
+      <QRCodeGenerator />
+    </>
+  );
 }
 
 export default App;
