@@ -1,0 +1,36 @@
+.themeContainer {
+  height: 100vh;
+  text-align: center;
+  align-content: center;
+}
+
+.themeContainer.light {
+  background-color: white;
+  color: black;
+}
+
+.themeContainer.dark {
+  background-color: black;
+  color: white;
+}
+
+.theme-button {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Light theme button */
+.light-button {
+  background-color: black;
+  color: white;
+}
+
+/* Dark theme button */
+.dark-button {
+  background-color: white;
+  color: #555;
+}
